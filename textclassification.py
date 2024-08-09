@@ -1,12 +1,13 @@
 import pandas as pd
+import ssl
+import nltk
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
-import nltk
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
-import ssl
+
 #try using this SSL enabler if getting error
 try:
     _create_unverified_https_context = ssl._create_unverified_context
